@@ -1,0 +1,55 @@
+
+#root {
+    // Scss variables which we gonna assign using
+    // useState and JavaScript in reactJ]
+
+    $background-color: rgb(255, 255, 255);
+    $text-color: #262833;
+    $margin-top: 10px;
+    $border-bottom: 1px solid;
+    $font-sizetext:1rem;
+    $font-sizeinput:14px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: auto;
+
+  }
+    
+  .card {
+
+    background-color: var(--background-color);
+    margin: 20px 10px;
+    padding: 10px;
+
+  }
+
+    button {
+      font-weight: bolder;
+      border-radius: 50px;
+      color: var(--background-color);
+      border: none;
+      border-style: none;
+      margin-top: var(--margin-top);
+      padding: 10px 20px;
+      background-color: var(--text-color);
+    }
+
+    .textlabel {
+      font-size: var(--font-sizetext);
+      color: var(--text-color);
+    }
+    .textinput {
+      font-size: var(--font-sizeinput);
+      color: var(--text-color);
+      margin-top: var(--margin-top);
+      border:none;
+      border-color: var(--text-color);
+      border-bottom: var(--border-bottom);
+      background-color: var(--background-color);
+    }
+    .textinput:focus
+    {
+      outline: 0;
+    }
+  
